@@ -5,6 +5,7 @@ const Setvalue = ({ x }) => {
     if (x === 0) {
         return (
             <Bike></Bike>
+
         );
     }
     else if (x === 1) {

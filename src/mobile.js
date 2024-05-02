@@ -1,36 +1,41 @@
-
+import { Link } from 'react-router-dom'
+import Button from './button'
+import Header, { Product, Sidemenu } from './shop'
 const Mobile = () => {
     return (
         <>
-            <div className="r1">Online Shop</div>
+            <Header Header="online shop" />
             <div className="r2">
                 <div className="c1">
-                    <ul>
-                        <li onClick={
-                            "Setvalue(0)"
-                        }>mobile
-                        </li>
-                        <li
-                            onClick={"Setvalue(1)"}
-                        > Mobile</li>
-                        <li
-                            onClick={"Setvalue(2)"}
-                        >car</li>
-                    </ul>
+                    <Sidemenu sidebar1="car" sidebar2="mobile" sidebar3="bike" car="/car" bike="/bike" mobile="/mobile" />
                 </div>
                 <div className="c2">
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
 
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1"><img src={require('./images/abc.jfif')} /></div>
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
 
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} /> <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} /> <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} /> <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
+
+                    <Product pname="vivo" price="12000" offer="11200" pic={require('./images/mobile.jpg')} />
                 </div>
             </div>
+
         </>
     )
 }

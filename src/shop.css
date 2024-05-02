@@ -8,15 +8,33 @@
     padding: 10px;
     text-align: center;
     width: 100%;
-    position: fixed;
     font-size: 30px;
+    color: white;
 }
+
+button {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 5px;
+    color: white;
+    transition: 1s;
+}
+
+button:hover {
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .6);
+    font: 200;
+    font-weight: 500;
+
+}
+
+
 
 .r2 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .r2>.c1 {
@@ -30,14 +48,23 @@
 li {
     padding: 10px;
     list-style: none;
-    color: goldenrod;
-    font-size: 30px;
+
+    padding: 20px;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
 }
 
 li:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-    font-size: 40px;
-    background-color: green;
+    /* filter: drop-shadow(0 0 2em #646cffaa); */
+    background-color: lightblue;
+    color: black
 }
 
 .r2>.c2 {
@@ -52,14 +79,10 @@ li:hover {
 .r2>.c2>.m1 {
     margin: 1% 2.5% 1% 2.5%;
     flex: 20%;
-    /* background-color: violet; */
     padding: 5px;
+    transition: 2s;
 }
 
-img:hover {
-    width: 110%;
-    height: 102%
-}
 
 img {
     width: 100%;

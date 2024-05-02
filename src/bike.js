@@ -1,39 +1,33 @@
-
+import { Link } from 'react-router-dom'
+import Button from './button'
+import Header, { Product, Sidemenu } from './shop'
 const Bike = () => {
     return (
         <>
-            <div className="r1">Online Shop</div>
+            <Header Header="online shop" />
             <div className="r2">
                 <div className="c1">
-                    <ul>
-                        <li onClick={
-                            "Setvalue(0)"
-                        }>
-                            bike
-                        </li>
-                        <li
-                            onClick={"Setvalue(1)"}
-                        > Mobile</li>
-                        <li
-                            onClick={"Setvalue(2)"}
-                        >car</li>
-                    </ul>
+                    <Sidemenu sidebar1="car" sidebar2="mobile" sidebar3="bike" car="/car" bike="/bike" mobile="/mobile" />
                 </div>
                 <div className="c2">
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1"><img src={require('./images/abc.jfif')} /></div>
-
-
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-                    <div className="m1">PIC</div>
-
-
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} /><Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
+                    <Product pname="boolet" price="150000" offer="120000" pic={require('./images/b1.jpg')} />
                 </div>
             </div>
+
         </>
     )
 }

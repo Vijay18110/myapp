@@ -1,143 +1,43 @@
-
-
+import { Link } from 'react-router-dom'
+import Button from './button'
+import Header, { Product, Sidemenu } from './shop'
 const Car = () => {
     return (
         <>
-            <div className="r1">Online Shop</div>
+            <Header Header="online shop" />
             <div className="r2">
                 <div className="c1">
-                    <ul>
-                        <li onClick={
-                            "Setvalue(0)"
-                        }>bike
-                        </li>
-                        <li
-                            onClick={"Setvalue(1)"}
-                        > Mobile</li>
-                        <li
-                            onClick={"Setvalue(2)"}
-                        >car</li>
-                    </ul>
+                    <Sidemenu sidebar1="car" sidebar2="mobile" sidebar3="bike" car="/car" bike="/bike" mobile="/mobile" />
                 </div>
                 <div className="c2">
-                    <div className="m1"><img src={require('./images/1.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/ab.jpg')} />
-                        <p>
-                            <span>price:<del>699999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/2.jfif')} />
-                        <p>
-                            <span>price:<del>559999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/3.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/4.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/4.jfif')} />
-                        <p>
-                            <span>price:<del>989999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/5.jfif')} />
-                        <p>
-                            <span>price:<del>989999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/6.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-
-                    <div className="m1"><img src={require('./images/7.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/3.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/2.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/5.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-
-                    <div className="m1"><img src={require('./images/2.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/1.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/6.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-                    <div className="m1"><img src={require('./images/7.jfif')} />
-                        <p>
-                            <span>price:<del>599999</del></span>&nbsp;
-                            <span>499999-/</span>
-
-                        </p>
-                    </div>
-
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="4000" offer="3000" pname="Toyata" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="4000" offer="3000" pname="Toyata" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="4000" offer="3000" pname="Toyata" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
+                    <Product price="2000" offer="1000" pname="Maruti" pic={require('./images/1.jfif')} />
 
                 </div>
             </div>
+
         </>
     )
 }
